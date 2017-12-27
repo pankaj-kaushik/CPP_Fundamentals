@@ -9,7 +9,8 @@ class A
 		A(int = 0);
 
 	private:	
-		int data;
+		const int data;
+		
 };
 
 A::A(int x):data(x)
