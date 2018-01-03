@@ -2,16 +2,6 @@
 
 using namespace std;
 
-class B
-{
-
-	public:
-		B()
-		{
-			cout << "B() constructor is called" << endl;
-		}
-
-};
 
 class A
 {
@@ -21,15 +11,16 @@ class A
 			cout << "A() Constructor is called" << endl;
 		}
 
-	private:
-		B b1;	
+		A(int = 0)
+		{
+			cout << "A() Constructor called with default argument" << endl;
+		}
 };
 
 
 int main()
 {
 
-	A a1;
-	cout << sizeof(A) << endl;
+	A a1; // compilation error due to ambiguity
 	return 0;
 }

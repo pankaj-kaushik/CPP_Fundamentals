@@ -2,12 +2,14 @@
 
 using namespace std;
 
+extern int y = 0; // Giving compiler warning
 void func()
 {
 
 	//extern int x = 20; //It will give compilation error
-	extern int y; // linker error
-	cout << y;
+	extern int z;
+	//extern int y; // linker error
+	//cout << y;
 }
 
 
