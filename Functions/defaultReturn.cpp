@@ -7,7 +7,7 @@ using namespace std;
 
 int show()
 {
-	cout << "Function show is called";
+	cout << "Function show is called" << endl;
 }
 
 int main()
